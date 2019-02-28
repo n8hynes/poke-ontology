@@ -37,7 +37,7 @@
     *  **Surf**: Surf is a damage-dealing Water-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Surf_(move))
     *  **Strength**: Strength is a damage-dealing Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Strength_(move))
     *  **Flash**: Flash is a non-damaging Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Flash_(move))
-* *Machine*: The set of both TMs and HMs, items that teach Pokemon new moves. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Item#TMs_.26_HMs)
+* *Machine*: The set of both TMs and HMs, items that teach Pokémon new moves. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Item#TMs_.26_HMs)
     * **TechnicalMachine**: A Technical Machine, or TM for short, is an item that is used to teach a Pokémon a new move that it might not learn otherwise. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM)
         * **TM01**: TM01 is a TM that teaches the move Mega Punch in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM01)
         * **TM02**: TM02 is a TM that teaches the move Razor Wind in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM02)
