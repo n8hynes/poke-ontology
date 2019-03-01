@@ -29,7 +29,7 @@
 * PokemonMove
     *  Mega Punch
     *  Razor Wind
-    *  words Dance
+    *  Swords Dance
     *  Whirlwind
     *  Mega Kick
     *  Cut
