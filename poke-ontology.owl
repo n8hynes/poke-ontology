@@ -49,6 +49,15 @@
     
 
 
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#badgeRequired -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#badgeRequired">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applicable to only HMs.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#machineProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#definition"/>
@@ -70,6 +79,20 @@
     
 
 
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#location -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#location">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#machineProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#machineProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#machineProperty"/>
+    
+
+
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokedexNumber -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokedexNumber">
@@ -88,6 +111,24 @@
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#purchasePrice -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#purchasePrice">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applicable to only TMs.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#machineProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#sellPrice -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#sellPrice">
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Applicable to only TMs.</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#machineProperty"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -745,7 +786,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM01">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cascade Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM01 is an HM that teaches the move Cut.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S.S. Anne</location>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM01</source>
     </owl:Class>
     
@@ -755,7 +798,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM02">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thunder Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM02 is an HM that teaches the move Fly.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Route 16</location>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM02</source>
     </owl:Class>
     
@@ -765,7 +810,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM03">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soul Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM03 is an HM that teaches the move Surf.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safari Zone</location>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM03</source>
     </owl:Class>
     
@@ -775,7 +822,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM04">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rainbow Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM04 is an HM that teaches the move Strength.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuchsia City</location>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM04</source>
     </owl:Class>
     
@@ -785,7 +834,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM05">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boulder Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM05 is an HM that teaches the move Flash.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Route 2</location>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM05</source>
     </owl:Class>
     
@@ -1122,6 +1173,9 @@
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM01">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM01 is a TM that teaches the move Mega Punch.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mt. Moon, Celadon Department Store</location>
+        <purchasePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</purchasePrice>
+        <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</sellPrice>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM01</source>
     </owl:Class>
     
@@ -1132,6 +1186,9 @@
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM02">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM02 is a TM that teaches the move Razor Wind.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celadon Department Store, Rocket Hideout</location>
+        <purchasePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</purchasePrice>
+        <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</sellPrice>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM02</source>
     </owl:Class>
     
@@ -1142,6 +1199,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM03">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM03 is a TM that teaches the move Swords Dance.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silph Co.</location>
+        <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</sellPrice>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM03</source>
     </owl:Class>
     
@@ -1152,6 +1211,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM04">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM04 is a TM that teaches the move Whirlwind.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Route 4</location>
+        <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</sellPrice>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM04</source>
     </owl:Class>
     
@@ -1162,6 +1223,9 @@
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM05">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM05 is a TM that teaches the move Mega Kick.</definition>
+        <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victory Road, Celadon Department Store</location>
+        <purchasePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</purchasePrice>
+        <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1500</sellPrice>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM05</source>
     </owl:Class>
     
