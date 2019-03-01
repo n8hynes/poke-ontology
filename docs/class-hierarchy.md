@@ -1,52 +1,52 @@
 # Class Hierarchy
 
-* **Pokemon**: Pokémon are fictional creatures that are central to the Pokémon franchise. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species))
-    * **Bulbasaur**: Bulbasaur is a dual-type Grass/Poison Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Bulbasaur_(Pok%C3%A9mon))
-    * **Ivysaur**: Ivysaur is a dual-type Grass/Poison Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Ivysaur_(Pok%C3%A9mon))
-    * **Venusaur**: Venusaur is a dual-type Grass/Poison Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Venusaur_(Pok%C3%A9mon))
-    * **Charmander**: Charmander is a Fire-type Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon))
-    * **Charmeleon**: Charmeleon is a Fire-type Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Charmeleon_(Pok%C3%A9mon))
-    * **Charizard**: Charizard is a dual-type Fire/Flying Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Charizard_(Pok%C3%A9mon))
-    * **Squirtle**: Squirtle is a Water-type Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Squirtle_(Pok%C3%A9mon))
-    * **Wartortle**: Wartortle is a Water-type Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Wartortle_(Pok%C3%A9mon))
-    * **Blastoise**: Blastoise is a Water-type Pokémon introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Blastoise_(Pok%C3%A9mon))
-* **PokemonType**: Types are properties for Pokémon and their moves. A Pokémon may have either one or two types. A move has exactly one type. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Type)
-    * *NormalType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Normal_(type))
-    * *FightingType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Fighting_(type))
-    * *FlyingType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Flying_(type))
-    * *PoisonType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Poison_(type))
-    * *GroundType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Ground_(type))
-    * *RockType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Rock_(type))
-    * *BugType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Bug_(type))
-    * *GhostType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Ghost_(type))
-    * *FireType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Fire_(type))
-    * *WaterType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Water_(type))
-    * *GrassType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Grass_(type))
-    * *ElectricType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Electric_(type))
-    * *PsychicType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Psychic_(type))
-    * *IceType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Ice_(type))
-    * *DragonType*: [(Source)](https://bulbapedia.bulbagarden.net/wiki/Dragon_(type))
-* **PokemonMove**: A move, also known as an attack or technique, is the skill Pokémon primarily use in battle. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Move)
-    *  **Mega Punch**: Mega Punch is a damage-dealing Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Mega_Punch_(move))
-    *  **Razor Wind**: Razor Wind is a damage-dealing Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Razor_Wind_(move))
-    *  **Swords Dance**: Swords Dance is a non-damaging Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Swords_Dance_(move))
-    *  **Whirlwind**: Whirlwind is a non-damaging Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Whirlwind_(move))
-    *  **Mega Kick**: Mega Kick is a damage-dealing Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Mega_Kick_(move))
-    *  **Cut**: Cut is a damage-dealing Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Cut_(move))
-    *  **Fly**: Fly is a damage-dealing Flying-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Fly_(move))
-    *  **Surf**: Surf is a damage-dealing Water-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Surf_(move))
-    *  **Strength**: Strength is a damage-dealing Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Strength_(move))
-    *  **Flash**: Flash is a non-damaging Normal-type move introduced in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Flash_(move))
-* *Machine*: The set of both TMs and HMs, items that teach Pokémon new moves. [(Source)](https://bulbapedia.bulbagarden.net/wiki/Item#TMs_.26_HMs)
-    * **TechnicalMachine**: A Technical Machine, or TM for short, is an item that is used to teach a Pokémon a new move that it might not learn otherwise. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM)
-        * **TM01**: TM01 is a TM that teaches the move Mega Punch in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM01)
-        * **TM02**: TM02 is a TM that teaches the move Razor Wind in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM02)
-        * **TM03**: TM03 is a TM that teaches the move Swords Dance in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM03)
-        * **TM04**: TM04 is a TM that teaches the move Whirlwind in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM04)
-        * **TM05**: TM05 is a TM that teaches the move Mega Kick in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/TM05)
-    * **HiddenMachine**: A Hidden Machine, HM for short, is an item that is used to teach a Pokémon a move. HMs can be used an unlimited number of times and cannot be disposed of. [(Source)](https://bulbapedia.bulbagarden.net/wiki/HM)
-        * **HM01**: HM01 is an HM that teaches the move Cut in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/HM01)
-        * **HM02**: HM02 is an HM that teaches the move Fly in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/HM02)
-        * **HM03**: HM03 is an HM that teaches the move Surf in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/HM03)
-        * **HM04**: HM04 is an HM that teaches the move Strength in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/HM04)
-        * **HM05**: HM05 is an HM that teaches the move Flash in Generation I. [(Source)](https://bulbapedia.bulbagarden.net/wiki/HM05)
+* Pokemon
+    * Bulbasaur
+    * Ivysaur
+    * Venusaur
+    * Charmander
+    * Charmeleon
+    * Charizard
+    * Squirtle
+    * Wartortle
+    * Blastoise
+* PokemonType
+    * NormalType
+    * FightingType
+    * FlyingType
+    * PoisonType
+    * GroundType
+    * RockType
+    * BugType
+    * GhostType
+    * FireType
+    * WaterType
+    * GrassType
+    * ElectricType
+    * PsychicType
+    * IceType
+    * DragonType
+* PokemonMove
+    *  Mega Punch
+    *  Razor Wind
+    *  words Dance
+    *  Whirlwind
+    *  Mega Kick
+    *  Cut
+    *  Fly
+    *  Surf
+    *  Strength
+    *  Flash
+* Machine
+    * TechnicalMachine
+        * TM01
+        * TM02
+        * TM03
+        * TM04
+        * TM05
+    * HiddenMachine
+        * HM01
+        * HM02
+        * HM03
+        * HM04
+        * HM05
