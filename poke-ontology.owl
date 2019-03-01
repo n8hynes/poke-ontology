@@ -391,6 +391,77 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Bug_(type)</source>
     </owl:Class>
     
@@ -661,7 +732,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</Accuracy>
@@ -677,6 +748,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Dragon_(type)</source>
     </owl:Class>
     
@@ -686,6 +769,75 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Electric_(type)</source>
     </owl:Class>
     
@@ -695,6 +847,89 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fighting_(type)</source>
     </owl:Class>
     
@@ -704,6 +939,77 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fire_(type)</source>
     </owl:Class>
     
@@ -716,7 +1022,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</Accuracy>
@@ -734,7 +1040,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</Accuracy>
@@ -750,6 +1056,63 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Flying_(type)</source>
     </owl:Class>
     
@@ -759,6 +1122,43 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ghost_(type)</source>
     </owl:Class>
     
@@ -768,6 +1168,91 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Grass_(type)</source>
     </owl:Class>
     
@@ -777,6 +1262,82 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ground_(type)</source>
     </owl:Class>
     
@@ -786,6 +1347,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM01">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cascade Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM01 is an HM that teaches the move Cut.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S.S. Anne</location>
@@ -798,6 +1371,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM02">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thunder Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM02 is an HM that teaches the move Fly.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Route 16</location>
@@ -810,6 +1395,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM03">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soul Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM03 is an HM that teaches the move Surf.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safari Zone</location>
@@ -822,6 +1419,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM04">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rainbow Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM04 is an HM that teaches the move Strength.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuchsia City</location>
@@ -834,6 +1443,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM05">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boulder Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM05 is an HM that teaches the move Flash.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Route 2</location>
@@ -857,6 +1478,70 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ice_(type)</source>
     </owl:Class>
     
@@ -936,7 +1621,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</Accuracy>
@@ -955,7 +1640,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Accuracy>
@@ -971,6 +1656,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesNoDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Normal_(type)</source>
     </owl:Class>
     
@@ -980,6 +1689,70 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Poison_(type)</source>
     </owl:Class>
     
@@ -1024,6 +1797,43 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Psychic_(type)</source>
     </owl:Class>
     
@@ -1036,7 +1846,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
@@ -1052,6 +1862,70 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Rock_(type)</source>
     </owl:Class>
     
@@ -1120,7 +1994,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
@@ -1139,7 +2013,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
@@ -1158,7 +2032,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PP>
@@ -1172,6 +2046,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM01">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM01 is a TM that teaches the move Mega Punch.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mt. Moon, Celadon Department Store</location>
         <purchasePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</purchasePrice>
@@ -1185,6 +2071,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM02">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RazorWind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RazorWind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM02 is a TM that teaches the move Razor Wind.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Celadon Department Store, Rocket Hideout</location>
         <purchasePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">2000</purchasePrice>
@@ -1198,6 +2096,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM03">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM03 is a TM that teaches the move Swords Dance.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Silph Co.</location>
         <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">1000</sellPrice>
@@ -1210,6 +2120,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM04">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Whirlwind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Whirlwind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM04 is a TM that teaches the move Whirlwind.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Route 4</location>
         <sellPrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">500</sellPrice>
@@ -1222,6 +2144,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM05">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM05 is a TM that teaches the move Mega Kick.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Victory Road, Celadon Department Store</location>
         <purchasePrice rdf:datatype="http://www.w3.org/2001/XMLSchema#int">3000</purchasePrice>
@@ -1353,6 +2287,70 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesDoubleDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#doesHalfDamageTo"/>
+                <owl:allValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
+                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:allValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Water_(type)</source>
     </owl:Class>
     
@@ -1365,7 +2363,7 @@
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Accuracy>
