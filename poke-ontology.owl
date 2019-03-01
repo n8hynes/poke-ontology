@@ -324,12 +324,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blastoise is a Water-type Pokémon.</definition>
         <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.6</height>
         <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">9</pokedexNumber>
@@ -362,25 +356,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bulbasaur is a dual-type Grass/Poison Pokémon.</definition>
@@ -432,19 +407,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charizard is a dual-type Fire/Flying Pokémon.</definition>
         <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.7</height>
         <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">6</pokedexNumber>
@@ -488,18 +450,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charmander is a Fire-type Pokémon.</definition>
         <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.6</height>
         <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">4</pokedexNumber>
@@ -541,18 +491,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Charmeleon is a Fire-type Pokémon.</definition>
@@ -696,6 +634,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM01">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM01 is an HM that teaches the move Cut.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM01</source>
     </owl:Class>
     
 
@@ -704,6 +644,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM02">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM02 is an HM that teaches the move Fly.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM02</source>
     </owl:Class>
     
 
@@ -712,6 +654,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM03">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM03 is an HM that teaches the move Surf.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM03</source>
     </owl:Class>
     
 
@@ -720,6 +664,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM04">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM04 is an HM that teaches the move Strength.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM04</source>
     </owl:Class>
     
 
@@ -728,6 +674,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HM05">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM05 is an HM that teaches the move Flash.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM05</source>
     </owl:Class>
     
 
@@ -737,6 +685,8 @@
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#HiddenMachine">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Hidden Machine, HM for short, is an item that is used to teach a Pokémon a move. HMs can be used an unlimited number of times and cannot be disposed of.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/HM</source>
     </owl:Class>
     
 
@@ -766,25 +716,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ivysaur is a dual-type Grass/Poison Pokémon.</definition>
         <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">1.0</height>
         <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">2</pokedexNumber>
@@ -796,7 +727,10 @@
 
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine">
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The set of both TMs and HMs, items that teach Pokémon new moves.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Item#TMs_.26_HMs</source>
+    </owl:Class>
     
 
 
@@ -876,6 +810,8 @@
                 <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A move, also known as an attack or technique, is the skill Pokémon primarily use in battle.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Move</source>
     </owl:Class>
     
 
@@ -954,18 +890,6 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Squirtle is a Water-type Pokémon.</definition>
         <height rdf:datatype="http://www.w3.org/2001/XMLSchema#float">0.5</height>
         <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">7</pokedexNumber>
@@ -1034,6 +958,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM01">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM01 is a TM that teaches the move Mega Punch.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM01</source>
     </owl:Class>
     
 
@@ -1042,6 +968,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM02">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM02 is a TM that teaches the move Razor Wind.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM02</source>
     </owl:Class>
     
 
@@ -1050,6 +978,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM03">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM03 is a TM that teaches the move Swords Dance.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM03</source>
     </owl:Class>
     
 
@@ -1058,6 +988,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM04">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM04 is a TM that teaches the move Whirlwind.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM04</source>
     </owl:Class>
     
 
@@ -1066,6 +998,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TM05">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">TM05 is a TM that teaches the move Mega Kick.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM05</source>
     </owl:Class>
     
 
@@ -1074,6 +1008,8 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#TechnicalMachine">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Technical Machine, or TM for short, is an item that is used to teach a Pokémon a new move that it might not learn otherwise.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM</source>
     </owl:Class>
     
 
@@ -1092,19 +1028,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom>
-                    <owl:Class>
-                        <owl:intersectionOf rdf:parseType="Collection">
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GrassType"/>
-                            <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType"/>
-                        </owl:intersectionOf>
-                    </owl:Class>
-                </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Venusaur is a dual-type Grass/Poison Pokémon.</definition>
@@ -1142,18 +1065,6 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Blastoise"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wartortle is a Water-type Pokémon.</definition>
