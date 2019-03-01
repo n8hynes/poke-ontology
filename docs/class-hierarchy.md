@@ -1,6 +1,7 @@
 # Class Hierarchy
 
 * Pokemon
+    * *Defined class:* DualTypePokemon
     * Bulbasaur
     * Ivysaur
     * Venusaur
