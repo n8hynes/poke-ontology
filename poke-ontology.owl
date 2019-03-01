@@ -24,6 +24,31 @@
     
 
 
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Accuracy -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Accuracy">
+        <rdfs:comment>As a percent (%).</rdfs:comment>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonMoveProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PP -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PP">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonMoveProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Power -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Power">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonMoveProperty"/>
+    </owl:AnnotationProperty>
+    
+
+
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#definition -->
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#definition"/>
@@ -34,7 +59,7 @@
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#height">
         <rdfs:comment>Measured in meters (m).</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonAnnotationProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -49,14 +74,20 @@
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokedexNumber">
         <rdfs:comment>Index of a Pokemon&apos;s entry in the Kanto Pokedex.</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonAnnotationProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty"/>
     </owl:AnnotationProperty>
     
 
 
-    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonAnnotationProperty -->
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonMoveProperty -->
 
-    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonAnnotationProperty"/>
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonMoveProperty"/>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty -->
+
+    <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty"/>
     
 
 
@@ -70,7 +101,7 @@
 
     <owl:AnnotationProperty rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#weight">
         <rdfs:comment>Measured in kilograms (kg).</rdfs:comment>
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonAnnotationProperty"/>
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#pokemonProperty"/>
     </owl:AnnotationProperty>
     
 
@@ -294,6 +325,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#BugType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Bug_(type)</source>
     </owl:Class>
     
 
@@ -422,6 +454,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PP>
+        <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</Power>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cut is a damage-dealing Normal-type move. Cut inflicts damage and has no secondary effect.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Cut_(move)</source>
     </owl:Class>
     
 
@@ -430,6 +467,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Dragon_(type)</source>
     </owl:Class>
     
 
@@ -456,6 +494,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Electric_(type)</source>
     </owl:Class>
     
 
@@ -464,6 +503,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FightingType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fighting_(type)</source>
     </owl:Class>
     
 
@@ -490,6 +530,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fire_(type)</source>
     </owl:Class>
     
 
@@ -498,6 +539,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PP>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flash is a non-damaging Normal-type move. Flash decreases the target&apos;s accuracy stat by one stage.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Flash_(move)</source>
     </owl:Class>
     
 
@@ -506,6 +551,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PP>
+        <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</Power>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fly is a damage-dealing Flying-type move. On the turn that Fly is selected, the user will fly up high. On the following turn, Fly will inflict damage.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fly_(move)</source>
     </owl:Class>
     
 
@@ -520,6 +570,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Flying_(type)</source>
     </owl:Class>
     
 
@@ -528,6 +579,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ghost_(type)</source>
     </owl:Class>
     
 
@@ -554,6 +606,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Grass_(type)</source>
     </owl:Class>
     
 
@@ -562,6 +615,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ground_(type)</source>
     </owl:Class>
     
 
@@ -619,6 +673,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#IceType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ice_(type)</source>
     </owl:Class>
     
 
@@ -671,6 +726,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PP>
+        <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</Power>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mega Kick is a damage-dealing Normal-type move. Mega Kick deals damage and has no secondary effect.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Mega_Kick_(move)</source>
     </owl:Class>
     
 
@@ -679,6 +739,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PP>
+        <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Power>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mega Punch is a damage-dealing Normal-type move. Mega Punch deals damage and has no secondary effect.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Mega_Punch_(move)</source>
     </owl:Class>
     
 
@@ -687,6 +752,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Normal_(type)</source>
     </owl:Class>
     
 
@@ -695,6 +761,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Poison_(type)</source>
     </owl:Class>
     
 
@@ -750,6 +817,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Psychic_(type)</source>
     </owl:Class>
     
 
@@ -758,6 +826,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RazorWind">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PP>
+        <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Power>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Razor Wind is a damage-dealing Normal-type move. Razor Wind does nothing on the turn it is selected. On the following turn, Razor Wind inflicts damage</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Razor_Wind_(move)</source>
     </owl:Class>
     
 
@@ -766,6 +839,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RockType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Rock_(type)</source>
     </owl:Class>
     
 
@@ -799,6 +873,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PP>
+        <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Power>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Strength is a damage-dealing Normal-type move. Strength inflicts damage and has no secondary effect.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Strength_(move)</source>
     </owl:Class>
     
 
@@ -807,6 +886,11 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PP>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</PP>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surf is a damage-dealing Water-type move. Surf inflicts damage and has no secondary effect.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Surf_(move)</source>
     </owl:Class>
     
 
@@ -815,6 +899,9 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PP>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swords Dance is a non-damaging Normal-type move. Swords Dance increases the user&apos;s Attack stat by two stages.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Swords_Dance_(move)</source>
     </owl:Class>
     
 
@@ -952,6 +1039,7 @@
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Water_(type)</source>
     </owl:Class>
     
 
@@ -960,6 +1048,10 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Whirlwind">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Accuracy>
+        <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PP>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whirlwind is a non-damaging Normal-type move. If Whirlwind is used in a wild Pokémon battle by a Pokémon on either side, the battle will automatically end. In a Trainer battle, Whirlwind has no effect.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Whirlwind_(move)</source>
     </owl:Class>
     
 
