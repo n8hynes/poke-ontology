@@ -165,6 +165,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which Pokémon can learn a given move. There are three main methods of acquiring moves on a Pokémon: by leveling up, by use of Technical Machines and by use of Hidden Machines.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Move#Learning_and_unlearning</source>
     </owl:ObjectProperty>
     
 
@@ -175,6 +177,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which moves a given Pokémon can learn. There are three main methods of acquiring moves on a Pokémon: by leveling up, by use of Technical Machines and by use of Hidden Machines.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Move#Learning_and_unlearning</source>
     </owl:ObjectProperty>
     
 
@@ -186,6 +190,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#takesDoubleDamageFrom"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which types the given type is super effective against. If the type of a move is super effective against a type of its target, the damage done is double the normal amount.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness</source>
     </owl:ObjectProperty>
     
 
@@ -197,6 +203,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#takesHalfDamageFrom"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which types the given type is not very effective against. If the type of a move is not very effective against a type of its target, the damage done is half the normal amount.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness</source>
     </owl:ObjectProperty>
     
 
@@ -208,6 +216,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#takesNoDamageFrom"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which types the given type is not effective against. If the type of a move is not effective against a type of its target, the target is completely immune to it, and the move will deal no damage.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness</source>
     </owl:ObjectProperty>
     
 
@@ -219,6 +229,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which Pokémon a given Pokémon evolves from. Evolution is a process in which a Pokémon changes into a different species of Pokémon.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Evolution</source>
     </owl:ObjectProperty>
     
 
@@ -229,6 +241,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which Pokémon a given Pokémon can evolve into. Evolution is a process in which a Pokémon changes into a different species of Pokémon.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Evolution</source>
     </owl:ObjectProperty>
     
 
@@ -240,6 +254,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes the type of a given move. A move has exactly one type.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type</source>
     </owl:ObjectProperty>
     
 
@@ -251,6 +267,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes the type(s) of a given Pokémon. A Pokémon may have either one or two types.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type</source>
     </owl:ObjectProperty>
     
 
@@ -262,6 +280,8 @@
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which Machine teaches a given move. TMs and HMs teach compatible Pokémon a move.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Item#TMs_.26_HMs</source>
     </owl:ObjectProperty>
     
 
@@ -272,6 +292,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes the moves of a given type. A move has exactly one type.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type</source>
     </owl:ObjectProperty>
     
 
@@ -282,6 +304,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes the Pokémon of a given type. A Pokémon may have either one or two types.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type</source>
     </owl:ObjectProperty>
     
 
@@ -292,6 +316,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which types are super effective against a given type. If the type of a move is super effective against a type of its target, the damage done is double the normal amount.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness</source>
     </owl:ObjectProperty>
     
 
@@ -302,6 +328,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which types are not very effective against a given type. If the type of a move is not very effective against a type of its target, the damage done is half the normal amount.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness</source>
     </owl:ObjectProperty>
     
 
@@ -312,6 +340,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which types are not effective against a given type. If the type of a move is not effective against a type of its target, the target is completely immune to it, and the move will deal no damage.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Type#Type_effectiveness</source>
     </owl:ObjectProperty>
     
 
@@ -322,6 +352,8 @@
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Describes which move is taught by a given Machine. TMs and HMs teach compatible Pokémon a move.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Item#TMs_.26_HMs</source>
     </owl:ObjectProperty>
     
 
@@ -462,6 +494,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Bug_(type)</source>
     </owl:Class>
     
@@ -760,7 +793,29 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DragonType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Dragon_(type)</source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DualTypePokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#DualTypePokemon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pokémon that have exactly 2 types.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Category:Dual-type_Pok%C3%A9mon</source>
     </owl:Class>
     
 
@@ -838,6 +893,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GroundType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Electric_(type)</source>
     </owl:Class>
     
@@ -930,6 +986,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fighting_(type)</source>
     </owl:Class>
     
@@ -1010,6 +1067,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fire_(type)</source>
     </owl:Class>
     
@@ -1113,6 +1171,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Flying_(type)</source>
     </owl:Class>
     
@@ -1159,6 +1218,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ghost_(type)</source>
     </owl:Class>
     
@@ -1253,6 +1313,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Grass_(type)</source>
     </owl:Class>
     
@@ -1338,6 +1399,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ground_(type)</source>
     </owl:Class>
     
@@ -1542,6 +1604,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Ice_(type)</source>
     </owl:Class>
     
@@ -1680,6 +1743,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#GhostType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Normal_(type)</source>
     </owl:Class>
     
@@ -1753,6 +1817,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Poison_(type)</source>
     </owl:Class>
     
@@ -1761,6 +1826,13 @@
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pokémon are fictional creatures that are central to the Pokémon franchise.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)</source>
@@ -1834,6 +1906,7 @@
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PsychicType"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Psychic_(type)</source>
     </owl:Class>
     
@@ -1926,6 +1999,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Rock_(type)</source>
     </owl:Class>
     
@@ -2351,6 +2425,7 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Water_(type)</source>
     </owl:Class>
     
