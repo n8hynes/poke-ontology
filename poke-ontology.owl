@@ -302,6 +302,30 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesFrom"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
             </owl:Restriction>
@@ -336,6 +360,18 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
             </owl:Restriction>
@@ -366,6 +402,42 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesFrom"/>
@@ -400,6 +472,36 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
             </owl:Restriction>
@@ -423,6 +525,36 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesFrom"/>
@@ -454,6 +586,48 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Bulbasaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PP>
         <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">50</Power>
@@ -476,24 +650,6 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Bulbasaur"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Electric_(type)</source>
     </owl:Class>
     
@@ -539,6 +695,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PP>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flash is a non-damaging Normal-type move. Flash decreases the target&apos;s accuracy stat by one stage.</definition>
@@ -551,6 +713,18 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PP>
         <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">70</Power>
@@ -564,6 +738,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FlyingType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
@@ -684,6 +864,18 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesFrom"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Bulbasaur"/>
             </owl:Restriction>
@@ -726,6 +918,48 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Blastoise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">75</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">5</PP>
         <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">120</Power>
@@ -739,6 +973,48 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Blastoise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PP>
         <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Power>
@@ -752,6 +1028,54 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RazorWind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Whirlwind"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Normal_(type)</source>
     </owl:Class>
     
@@ -761,6 +1085,24 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PoisonType">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Bulbasaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Poison_(type)</source>
     </owl:Class>
     
@@ -769,20 +1111,6 @@
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon">
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
-                <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
-                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pokémon are fictional creatures that are central to the Pokémon franchise.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Pok%C3%A9mon_(species)</source>
@@ -826,6 +1154,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#RazorWind">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">10</PP>
         <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Power>
@@ -848,6 +1182,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
@@ -873,6 +1231,48 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Blastoise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PP>
         <Power rdf:datatype="http://www.w3.org/2001/XMLSchema#int">80</Power>
@@ -886,6 +1286,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Blastoise"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">100</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">15</PP>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">95</PP>
@@ -899,6 +1323,48 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Bulbasaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charizard"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmander"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Charmeleon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canBeLearnedBy"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Venusaur"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">30</PP>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Swords Dance is a non-damaging Normal-type move. Swords Dance increases the user&apos;s Attack stat by two stages.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Swords_Dance_(move)</source>
@@ -960,6 +1426,18 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SwordsDance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesFrom"/>
                 <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Ivysaur"/>
             </owl:Restriction>
@@ -990,6 +1468,30 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Wartortle">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaKick"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#MegaPunch"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesFrom"/>
@@ -1023,6 +1525,12 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfMove"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#isTypeOfPokemon"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Blastoise"/>
             </owl:Restriction>
@@ -1048,6 +1556,12 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Whirlwind">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonMove"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasMoveType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <Accuracy rdf:datatype="http://www.w3.org/2001/XMLSchema#int">85</Accuracy>
         <PP rdf:datatype="http://www.w3.org/2001/XMLSchema#int">20</PP>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Whirlwind is a non-damaging Normal-type move. If Whirlwind is used in a wild Pokémon battle by a Pokémon on either side, the battle will automatically end. In a Trainer battle, Whirlwind has no effect.</definition>
