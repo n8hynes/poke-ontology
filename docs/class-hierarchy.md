@@ -1,6 +1,10 @@
 # Class Hierarchy
 
+List level indicates subclasses. *Italics* indicates Defined Class.
+
 * Pokemon
+    * *DualTypePokemon*
+    * *SingleTypePokemon*
     * Bulbasaur
     * Ivysaur
     * Venusaur
@@ -10,6 +14,10 @@
     * Squirtle
     * Wartortle
     * Blastoise
+    * Eevee
+    * Vaporeon
+    * Jolteon
+    * Flareon
 * PokemonType
     * NormalType
     * FightingType
