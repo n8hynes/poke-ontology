@@ -49,6 +49,7 @@ Each Pokemon in the hierarchy is part of many triples, linking each of them to t
 * hasPokemonType exactly 1 FireType
 * hasPokemonType exactly 1 FlyingType
 * hasPokemonType only (FireType or FlyingType)
+
 These triples, combined with the inherited "hasPokemonType max 2 PokemonType" from the Pokemon class, means that Charizard has exactly 2 types, and so will be inferred to be a DualTypePokemon when the reasoner is run. 
 
 Closure axioms were also used when defining the damage modification properties for the PokemonTypes, to ensure that the relationships between types are consistant and accurate with the data from the Pokemon games.
