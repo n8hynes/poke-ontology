@@ -841,8 +841,53 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Pokémon that have exactly 2 types.</definition>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SingleTypePokemon"/>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These Pokémon have two types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Category:Dual-type_Pok%C3%A9mon</source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Eevee -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Eevee">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flareon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Jolteon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#evolvesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Vaporeon"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#NormalType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eevee is a Normal-type Pokémon.</definition>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.3</height>
+        <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">133</pokedexNumber>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Eevee_(Pok%C3%A9mon)</source>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">6.5</weight>
     </owl:Class>
     
 
@@ -1096,6 +1141,32 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
         </rdfs:subClassOf>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the Pokémon types.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Fire_(type)</source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flareon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flareon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#FireType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flareon is a Fire-type Pokémon.</definition>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.9</height>
+        <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">136</pokedexNumber>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Flareon_(Pok%C3%A9mon)</source>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">25.0</weight>
     </owl:Class>
     
 
@@ -1695,6 +1766,38 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
     
 
 
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Jolteon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Jolteon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#ElectricType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jolteon is an Electric-type Pokémon.</definition>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">0.8</height>
+        <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">135</pokedexNumber>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Jolteon_(Pok%C3%A9mon)</source>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">24.5</weight>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine">
@@ -2046,6 +2149,27 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
     
 
 
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SingleTypePokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#SingleTypePokemon">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                        <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                        <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#PokemonType"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">These Pokémon only have one type.</definition>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Category:Single-type_Pok%C3%A9mon</source>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Squirtle">
@@ -2256,6 +2380,38 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Machine"/>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A Technical Machine, or TM for short, is an item that is used to teach a Pokémon a new move that it might not learn otherwise.</definition>
         <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/TM</source>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Vaporeon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Vaporeon">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Pokemon"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#canLearn"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#hasPokemonType"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#WaterType"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vaporeon is a Water-type Pokémon.</definition>
+        <height rdf:datatype="http://www.w3.org/2001/XMLSchema#double">1.0</height>
+        <pokedexNumber rdf:datatype="http://www.w3.org/2001/XMLSchema#int">134</pokedexNumber>
+        <source rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://bulbapedia.bulbagarden.net/wiki/Vaporeon_(Pok%C3%A9mon)</source>
+        <weight rdf:datatype="http://www.w3.org/2001/XMLSchema#double">29.0</weight>
     </owl:Class>
     
 
