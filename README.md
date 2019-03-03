@@ -1,6 +1,6 @@
 # poke-ontology
 
-A pokemon ontology, created for INFO 6540.
+A pokemon ontology, created by Nathan Hynes for INFO 6540.
 
 ## Scope
 
