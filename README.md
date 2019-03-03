@@ -14,7 +14,7 @@ All Pokemon types introduced in Generation I are represented as subclasses of Po
 
 ## Class Hierarchy
 
-At the top level of the hierarchy are the four main categories of Things that are defined by this ontology: Machines (the items that teach Pokemon specific moves), Pokemon (the creatures' species), PokemonMove (the moves that can be learned by Pokemon), and PokemonType (the set of elemental types assigned to each Pokemon and Move). Each of these, as well as every set of sibling subclasses, are disjoint, as there is no overlap between these categories.
+At the top level of the hierarchy are the four main categories of Things that are defined by this ontology: Machines (the items that teach Pokemon specific moves), Pokemon (the creatures' species), PokemonMove (the moves that can be learned by Pokemon), and PokemonType (the set of elemental types assigned to each Pokemon and Move). Each of these, as well as each set of sibling subclasses, are disjoint, as there is no overlap between these categories.
 
 As subclasses of Pokemon, there are two Defined Classes to categorize Pokemon as either a Single-type or Dual-type pokemon, according to how many types have been assigned to that Pokemon (1 or 2). These classes are also disjoint with one another. 
 
@@ -45,3 +45,10 @@ The evolvesTo relationship is not functional, as there exists Pokemon (Eevee) th
 
 ## Triples
 
+Each Pokemon in the hierarchy is part of many triples, linking each of them to their types, their evolutions, and the moves they can learn. The higher level "Pokemon" class is also part of triples to limit the number of types linked to a Pokemon in general - a minimum of one and a maximum of two. For the Pokemon types, a closure axiom was used to ensure that the defined subclasses DualTypePokemon and SingleTypePokemon infer their members appropriately. For example, Charizard:
+* hasPokemonType exactly 1 FireType
+* hasPokemonType exactly 1 FlyingType
+* hasPokemonType only (FireType or FlyingType)
+These triples, combined with the inherited "hasPokemonType max 2 PokemonType" from the Pokemon class, means that Charizard has exactly 2 types, and so will be inferred to be a DualTypePokemon when the reasoner is run. 
+
+Closure axioms were also used when defining the damage modification properties for the PokemonTypes, to ensure that the relationships between types are consistant and accurate with the data from the Pokemon games.
