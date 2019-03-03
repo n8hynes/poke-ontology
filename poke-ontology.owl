@@ -1513,12 +1513,6 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Cut"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cascade Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM01 is an HM that teaches the move Cut.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">S.S. Anne</location>
@@ -1535,12 +1529,6 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Fly"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Thunder Badge</badgeRequired>
@@ -1561,12 +1549,6 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Surf"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Soul Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM03 is an HM that teaches the move Surf.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Safari Zone</location>
@@ -1585,12 +1567,6 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Strength"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rainbow Badge</badgeRequired>
         <definition rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HM04 is an HM that teaches the move Strength.</definition>
         <location rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fuchsia City</location>
@@ -1607,12 +1583,6 @@ https://creativecommons.org/licenses/by-nc/4.0</license>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#teachesMove"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/n8hyn/ontologies/2019/1/poke-ontology#Flash"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <badgeRequired rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Boulder Badge</badgeRequired>
